@@ -24,7 +24,6 @@ github_username:  iriberri
 
 # Build settings
 markdown: kramdown
-theme: mustard
 gems:
   - jekyll-feed
 exclude:
