@@ -6,6 +6,8 @@ I was designing from scratch a Jekyll theme for my personal site and I thought i
 
 ## How to use the Mustard theme
 
+The current template has 3 main pages: a home page, an "about me" page, and a blog.
+
 WIP.
 
 ## Preview
