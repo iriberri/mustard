@@ -10,13 +10,16 @@
         <h2>Posts</h2>
 
         {% for post in site.posts %}    
-            <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-            <p><small><strong>{{ post.date | date: "%B %e, %Y" }}</strong> #{{ post.categories }}</small></p>            
-            <p> {{ post.excerpt }} <small><a href="{{ post.url }}">Keep reading</a></small></p>
+            <span><h3><a href="{{ post.url }}">{{ post.title }}</a></h3></span>
+            <p><small>Published at {{ post.date | date: "%B %e, %Y" }} about: #{{ post.categories }}</small></p>            
+            <p> {{ post.excerpt | remove: '<p>' | remove: '</p>' }} <small><a href="{{ post.url }}">» Keep reading</a></small></p>
             <br>
-            {% endfor %}    
+            {% endfor %}  
+
+            <center><small><a href="/feed.xml">ATOM feed</a></small></center>
         </div>
     </div>
+
     {% include footer.html %}
 </body>
 </html>
