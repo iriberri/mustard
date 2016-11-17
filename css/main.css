@@ -7,11 +7,11 @@ a {
 }
 
 .back-top {
-    background: #ECBE13;
+	background: #ECBE13;
 	width:100%;
 	position: absolute;
 	z-index: 0;
-    left: 0;
+	left: 0;
 	right: 0;
 	top:0;
 	height: 350px;
@@ -23,40 +23,39 @@ a {
 	background: #fff;
 	z-index:1;
 	margin: 305px auto 50px auto;
-    width: 700px;
-    border: 0px solid #f4f3f2;
+	width: 700px;
+	border: 0px solid #f4f3f2;
 	border-radius: 1px;
-    padding: 40px 80px 100px 80px;
+	padding: 40px 80px 100px 80px;
 	font-family: roboto;
 }
 
 
 
 .menu {
-    text-align: center;
-    color: #4A4A4A;
+	text-align: center;
+	color: #4A4A4A;
 	font-size: 15px;
 	font-family: roboto;
 	padding: 0px 0px 30px 0px;
-    font-weight: 100;
-    font-style: normal;
+	font-style: normal;
 }
 
 .back-top h1 {
 	color: white;
 	margin: 70px;
-    font-family: montserrat;
-    font-size: 150px;
+	font-family: montserrat;
+	font-size: 150px;
 	text-align: center;
 }
 
 
 span#title {
-    font-size: 18px;
+	font-size: 18px;
 }
 
 h2 {
-    color: #000;
+	color: #000;
 	font-size: 25px;
 }
 .footer {
@@ -67,3 +66,167 @@ h2 {
 	font-family: montserrat;
 
 }
+
+.invert-data:before {
+	content: attr(data-mail);
+	direction: rtl;
+	unicode-bidi: bidi-override;
+}
+
+
+/*------------------------------------------
+Responsive Grid Media Queries - 1280, 1024, 768, 480
+1280-1024   - desktop (default grid)
+1024-768    - tablet landscape
+768-480     - tablet 
+480-less    - phone landscape & smaller
+--------------------------------------------*/
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+	.back-top h1 {
+		color: white;
+		margin: 70px;
+		font-family: montserrat;
+		font-size: 80px;
+		text-align: center;
+	}
+
+
+	.back-top {
+		background: #ECBE13;
+		width:100%;
+		position: absolute;
+		z-index: 0;
+		left: 0;
+		right: 0;
+		top:0;
+		height: 320px;
+	}
+
+	.wrapper {
+		position:relative;
+		background: #fff;
+		z-index:1;
+		margin: 270px 0px 40px 0px;
+		width: 100%;
+		padding: 0px 0px 20px 0px;
+		font-family: roboto;
+	}
+
+	.wrapper p, h2, h3 {
+		padding: 0px 15px;
+	}
+
+	.menu {
+		text-align: center;
+		color: #4A4A4A;
+		font-size: 15px;
+		font-family: roboto;
+		padding: 30px 0px 30px 0px;
+		font-style: normal;
+	}
+
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+	.back-top h1 {
+		color: white;
+		margin: 70px;
+		font-family: montserrat;
+		font-size: 60px;
+		text-align: center;
+	}
+
+	.back-top {
+		background: #ECBE13;
+		width:100%;
+		position: absolute;
+		z-index: 0;
+		left: 0;
+		right: 0;
+		top:0;
+		height: 200px;
+	}
+
+	.wrapper {
+		position:relative;
+		background: #fff;
+		z-index:1;
+		margin: 170px 0px 40px 0px;
+		width: 100%;
+		padding: 0px 0px 20px 0px;
+		font-family: roboto;
+	}
+
+	.wrapper p, h2, h3 {
+		padding: 0px 15px;
+	}
+
+	.menu {
+		text-align: center;
+		color: #4A4A4A;
+		font-size: 15px;
+		font-family: roboto;
+		padding: 30px 0px 30px 0px;
+		font-style: normal;
+	}
+
+}
+
+@media all and (max-width: 480px) {
+	.back-top h1 {
+		color: white;
+		margin: 70px;
+		font-family: montserrat;
+		font-size: 60px;
+		text-align: center;
+	}
+
+	.back-top {
+		background: #ECBE13;
+		width:100%;
+		position: absolute;
+		z-index: 0;
+		left: 0;
+		right: 0;
+		top:0;
+		height: 200px;
+	}
+
+	.wrapper {
+		position:relative;
+		background: #fff;
+		z-index:1;
+		margin: 170px 0px 40px 0px;
+		width: 100%;
+		padding: 0px 0px 20px 0px;
+		font-family: roboto;
+	}
+
+	.wrapper p, h2, h3 {
+		padding: 0px 15px;
+	}
+
+	.menu {
+		text-align: center;
+		color: #4A4A4A;
+		font-size: 15px;
+		font-family: roboto;
+		padding: 30px 0px 30px 0px;
+		font-style: normal;
+	}
+
+
+}
+
+/* Non-Retina */
+@media screen and (-webkit-max-device-pixel-ratio: 1) {
+}
+
+/* Retina */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+}
+
